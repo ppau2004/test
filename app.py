@@ -2,7 +2,7 @@ from datetime import datetime
 from flask import render_template, redirect, request
 #from FlaskWebProject7 import app
 import pypyodbc
-# creating connection Object which will contain SQL Server Connection
+# creating connection Object which will contain SQL Server Connection - pp
 connection = pypyodbc.connect('Driver={SQL Server};Server=.;Database=Test;uid=sa;pwd=sA1234')  # Creating Cursor
 cursor = connection.cursor()
 cursor.execute("SELECT * FROM Test")
